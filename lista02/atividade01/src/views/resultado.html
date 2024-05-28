@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado</title>
+</head>
+<body>
+  <h1>Resultado da Operação</h1>
+  <p id="resultado"></p>
+  <a href="/">Voltar</a>
+  <script>
+    const resultado = new URLSearchParams(window.location.search).get('resultado');
+    document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
+  </script>
+</body>
+</html>
